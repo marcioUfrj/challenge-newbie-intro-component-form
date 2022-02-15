@@ -45,30 +45,44 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- JavaScript
 
 ### What I learned
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+<form id="form-signup" action="process-form.html" class="form-container">
+  <div class="field-container">
+    <input type="text" id="first-name" class="signup-input" placeholder="First Name">
+    <small hidden></small>
+  </div>
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+/* Function to adjust the ELEMENT */
+function showMessage(input, message, hasSucess, placeholderTxt) {
+  const msg = input.parentNode.querySelector('small');
+  msg.innerText = message;
+
+  if (hasSucess == false) {
+    msg.removeAttribute("hidden");
+    input.classList.add("field-err");
+    input.placeholder = placeholderTxt;
+    return hasSucess;
+  }
+
+  msg.setAttribute("hidden", true);
+  input.classList.remove("field-err");
+  return hasSucess;
 }
 ```
 
 
 ### Continued development
 
+I could understand a little more about form validation with JavaScript but there's still a long way to go.
 
 ### Useful resources
 
-- [JavaScript Form Validation](https://www.javascripttutorial.net/javascript-dom/javascript-form/)
+- [JavaScript Form Validation](https://www.javascripttutorial.net/javascript-dom/javascript-form/) - This was a master class for me.
 
 ## Author
 

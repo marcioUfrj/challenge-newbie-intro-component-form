@@ -8,19 +8,6 @@ const MSG_EMAIL_EMPTY = 'Email cannot be empty';
 const MSG_EMAIL_INVALID = 'Looks like this is not an email';
 const PLACEHOLDER_EMAIL_INVALID = 'Looks like this is not an email';
 
-/*
-- Receive an error message when the `form` is submitted if:
-  - Any `input` field is empty. 
-   message for this error should say 
-   *"[Field Name] cannot be empty"*
-
-  - The email address is not formatted correctly 
-  (i.e. a correct email address should have 
-    this structure: `name@host.tld`). 
-    The message for this error should say 
-    *"Looks like this is not an email"*
-
-*/
 
 form.addEventListener('submit', (event) => {
   // prevent form submission
