@@ -68,7 +68,7 @@ const proudOfThisFunc = () => {
 
 ### Useful resources
 
-- [JavaScript Form Validation](https://www.javascripttutorial.net/javascript-dom/javascript-form/) - This helped me for 
+- [JavaScript Form Validation](https://www.javascripttutorial.net/javascript-dom/javascript-form/)
 
 ## Author
 
