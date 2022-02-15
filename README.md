@@ -68,7 +68,7 @@ const proudOfThisFunc = () => {
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [JavaScript Form Validation](https://www.javascripttutorial.net/javascript-dom/javascript-form/) - This helped me for 
 
 ## Author
 

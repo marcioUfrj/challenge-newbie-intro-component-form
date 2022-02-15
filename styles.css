@@ -69,7 +69,9 @@ p {
 
 /* DATA CONTAINER */
 .data-container {
+  --max-width-data-container-desktop: 540px;
   width: 100%;
+  max-width: var(--max-width-data-container-desktop);
 }
 
 .button {
@@ -96,7 +98,8 @@ p {
 }
 
 .input-container {
-  padding: 40px 40px;
+  --padding-input-container: 40px;
+  padding: var(--padding-input-container);
   margin-top: 24px;
   border-radius: 10px;
   background-color: white;
@@ -127,16 +130,25 @@ p {
 }
 
 .signup-input {
+  --padding-lateral-signup-input: 30px;
   font-weight: var(--font-weight-semi-bold);
   height: 52px;
-  padding: 0 30px;
+  padding: 0 var(--padding-lateral-signup-input);
   border-radius: 5px;
   border: 1px solid var(--neutral-grayish-blue);
   
 }
 
 .signup-input.field-err {
+  --width-signup-input: calc(var(--max-width-data-container-desktop) - 2 * var(--padding-input-container));
+  --width-icon: 24px;
+  --error-icon-position: calc(var(--width-signup-input) - var(--padding-lateral-signup-input) - var(--width-icon));
+
+  color: var(--primary-red);
   border: 1px solid var(--primary-red);
+  background-image: url("./images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: var(--error-icon-position) center;
 }
 
 .terms-container {
