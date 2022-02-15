@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Fronted Mentor Challenge](https://your-solution-url.com)
-- Live Site URL: [Git Pages](https://your-live-site-url.com)
+- Live Site URL: [Git Pages](https://marcioufrj.github.io/challenge-newbie-intro-component-form/)
 
 ## My process
 
